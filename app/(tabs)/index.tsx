@@ -1,6 +1,4 @@
 import { Image, StyleSheet, Platform } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -16,13 +14,12 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bienvenue sur Fil Rouge!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">Bienvenue sur Fil Rouge !</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Étape 1 : Découverte et compréhension du framework</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
+          Éditez le fichier <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> pour observer des changements.
           Press{' '}
           <ThemedText type="defaultSemiBold">
             {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
@@ -31,19 +28,19 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+      <ThemedText type="subtitle">Étape 2 : Exploration du projet</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          Cliquez sur "Explorer" pour avoir un aperçu des différents composants du projet.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Étape 3 : Premiers tests</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          Lorsque vous êtes prêts, lancez{' '}
+          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> pour obtenir un nouveau{' '}
+          <ThemedText type="defaultSemiBold">app</ThemedText> répertoire. Cela va déplacer l'application dans{' '}
+          <ThemedText type="defaultSemiBold">app</ThemedText> un{' '}
+          <ThemedText type="defaultSemiBold">dossier app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
