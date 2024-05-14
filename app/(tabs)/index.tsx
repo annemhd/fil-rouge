@@ -12,9 +12,10 @@ export default function HomeScreen() {
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
         />
-      }>
+      }
+      >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bienvenue sur Fil Rouge !</ThemedText>
+        <ThemedText type="title">Projet Fil Rouge !</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Étape 1 : Découverte et compréhension du framework</ThemedText>
